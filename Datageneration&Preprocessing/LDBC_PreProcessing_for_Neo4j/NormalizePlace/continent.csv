@@ -1,0 +1,7 @@
+id:ID(CONTINENT_ID)|name:string|url:string|:LABEL
+1454|Asia|http://dbpedia.org/resource/Asia|Continent
+1455|Africa|http://dbpedia.org/resource/Africa|Continent
+1456|Europe|http://dbpedia.org/resource/Europe|Continent
+1457|South_America|http://dbpedia.org/resource/South_America|Continent
+1458|North_America|http://dbpedia.org/resource/North_America|Continent
+1459|Australia|http://dbpedia.org/resource/Australia|Continent

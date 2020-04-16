@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="LDBCDataDataFromat:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/LDBCDataDataFromat_jar</output-path>
+    <root id="archive" name="LDBCDataDataFromat.jar">
+      <element id="module-output" name="LDBCDataDataFromat" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/docopt-0.6.0.20150202.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

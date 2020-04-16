@@ -1,0 +1,45 @@
+To Generate Data (Ubuntu):
+Requirements:
+- Java to be installed and get its home directory.
+	$  apt install openjdk-8-jdk
+	$ update-java-alternatives -l (ubuntu only)
+- maven to be installed
+	$ apt install maven
+- Python to be installed.
+	$ apt install python3
+
+1- Download Hadoop 2.6
+
+	$ cd /home/<user>
+	$ wget http://archive.apache.org/dist/hadoop/core/hadoop-2.6.0/hadoop-2.6.0.tar.gz
+	$ tar xvfz hadoop-2.6.0.tar.gz
+
+2- Downlaod the LDBC-Generator master:
+
+	$ wget https://github.com/ldbc/ldbc_snb_datagen/archive/master.zip
+	$ sudo apt-get install zip gzip tar
+	$ unzip master.zip
+
+3- Configure Hadoop:
+
+open /home/<user>/hadoop-2.6.0/etc/hadoop/hadoop-env.sh and set JAVA_HOME to point to your JDK folder.
+
+4- inside the ldbc genertor folder edit the 'run.sh' file:
+
+	export HADOOP_CLIENT_OPTS="-Xmx2G"
+# set this to the Hadoop 2.6.0 directory
+        export HADOOP_HOME=........
+
+# set this to the repository's directory
+	export LDBC_SNB_DATAGEN_HOME=.......
+
+$ cd $LDBC_SNB_DATAGEN_HOME
+
+5- Run the run.sh of the generator:
+$./run.sh
+	
+
+6- by default the scale factor of the generator is (1) but we can edit the params.ini inside the home folder of the generator 
+
+	ldbc.snb.datagen.generator.scaleFactor:snb.interactive.1
+make this one 10 or 100 or 3000 
