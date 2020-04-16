@@ -1,0 +1,37 @@
+[[morpheus]]
+= Morpheus: Cypher for Apache Spark
+
+[abstract]
+--
+This part provides comprehensive documentation for Morpheus, Cypher for Apache Spark.
+--
+
+This part of the Morpheus user guide covers the following areas:
+
+* <<morpheus-overview>> -- Overview of Morpheus components: Property Graph Data Source backends and Cypher.
+* <<morpheus-introduction>> -- Introduction with examples to Morpheus concepts and APIs.
+* <<backends>> -- Detailed documentation of the Morpheus Session and the various Morpheus backends.
+* <<cypher>> -- Features and limitations of the Cypher graph query language as implemented in Morpheus.
+* <<performance>> -- Notes on caching and performance.
+* <<architecture>> -- Notes on Morpheus architecture and technology choices.
+* <<resources>> -- Resources for further reading.
+* <<examples>> -- A collection of example programs with explanations.
+
+
+include::overview.adoc[leveloffset=+1]
+
+include::introduction.adoc[leveloffset=+1]
+
+include::backends.adoc[leveloffset=+1]
+
+include::cypher.adoc[leveloffset=+1]
+
+// TODO: Discuss if this content is useful and where it should go.
+include::caching-and-performance.adoc[leveloffset=+1]
+
+// TODO: Discuss if this content is useful and where it should go.
+include::architecture-and-usage.adoc[leveloffset=+1]
+
+include::resources.adoc[leveloffset=+1]
+
+include::examples/index.adoc[leveloffset=+1]

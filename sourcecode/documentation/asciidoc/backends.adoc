@@ -1,0 +1,31 @@
+[[backends]]
+= Backends
+
+[abstract]
+--
+This chapter documents the Morpheus session, catalog and backends.
+--
+
+// TODO: Consider folding session+catalog into in-memory backend.
+
+Using Morpheus, graphs can be created from one or more backends, queried with Cypher, and optionally persisted back to one or more backends.
+A Morpheus application performs work through a <<morpheus-session, Morpheus Session>>.
+The session maintains references to one or more graphs in a _Catalog_.
+
+The following backends are supported in Morpheus and can be used in a Morpheus application:
+
+* <<backend-in-memory, In-memory backend>>
+* <<backend-filesystem, Filesystem backend>>
+* <<backend-neo4j, Neo4j backend>>
+* <<backend-sql, SQL backend>>
+
+include::session-catalog.adoc[leveloffset=+1]
+
+include::backend-in-memory.adoc[leveloffset=+1]
+
+include::backend-filesystem.adoc[leveloffset=+1]
+
+include::backend-neo4j.adoc[leveloffset=+1]
+
+include::backend-sql.adoc[leveloffset=+1]
+

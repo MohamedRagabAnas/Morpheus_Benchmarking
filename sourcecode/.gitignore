@@ -1,0 +1,30 @@
+dependency-reduced-pom.xml
+version.txt
+build/test/
+*/build
+
+# Spark/Hive runtime
+spark-warehouse/
+derby.log
+metastore_db
+metastore_*
+spark-warehouse_*/
+
+# IDE cruft
+.idea/
+*.iml
+.settings
+.project
+out/
+
+# Gradle
+.gradle
+/build/
+gradle-app.setting
+!gradle-wrapper.jar
+.gradletasknamecache
+# gradle/wrapper/gradle-wrapper.properties
+
+# Demo data sets
+yelp_json
+yelp_graph

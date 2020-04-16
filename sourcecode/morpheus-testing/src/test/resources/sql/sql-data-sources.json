@@ -1,0 +1,31 @@
+{
+  "CENSUS_ORACLE": {
+    "type": "jdbc",
+    "url": "jdbc:h2:mem:CENSUS.db;INIT=CREATE SCHEMA IF NOT EXISTS CENSUS;DB_CLOSE_DELAY=30;",
+    "driver": "org.h2.Driver",
+    "options": {
+      "fetchSize": "100"
+    }
+  },
+  "ORACLE_X2": {
+    "type": "jdbc",
+    "url": "jdbc:h2:mem:X2.db;INIT=CREATE SCHEMA IF NOT EXISTS X2;DB_CLOSE_DELAY=30;",
+    "driver": "org.h2.Driver",
+    "options": {
+      "user": "ORACLE_X2_USER",
+      "password": "ORACLE_X2_PASS",
+      "fetchSize": "10"
+    }
+  },
+  "HIVE_CENSUS": {
+    "type": "hive"
+  },
+  "HIVE_X2": {
+    "type": "hive"
+  },
+  "MY_DIR": {
+    "type": "file",
+    "format": "parquet",
+    "basePath": "/my/path"
+  }
+}
